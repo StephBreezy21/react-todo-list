@@ -7,8 +7,8 @@ export default function TodoItems(props) {
         <div className={todo.completed ? "todo-row completed" : "todo-row"}>
             {todo.text}
             <div className="inconsContainer">
-                <button className="icon text-black" style={{ marginRight: 5}} onClick={() => removeTodo(todo.id)} >Remove</button>
-                <button className="icon text-black" onClick={() => completeTodo(todo.id)} >Checked</button>
+                <button className="icon text-black" title="Effacer la todo" style={{ marginRight: 5}} onClick={() => removeTodo(todo.id)} >Remove</button>
+                <button className="icon text-black" title="Checker la todo" onClick={() => completeTodo(todo.id)} >Checked</button>
             </div>
         </div>
     );
